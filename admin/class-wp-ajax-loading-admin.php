@@ -251,7 +251,53 @@ class WP_ajax_loading_Admin
 		wp_enqueue_script($this->plugin_name.'-WPajaxLoad' );
 		?>
 		<style type="text/css">
-			body{position:relative!important}#document-script,#document-title{display:none!important}.wp-ajax-loading{position:relative}.wp-ajax-loader-panel{display:none;background:#fff;position:fixed;z-index:9999999;top:0;left:0;width:100%;height:100vh}.wp-ajax-loader{display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9999;width:80px;height:80px;margin:-76px 0 0 -76px;border:12px solid #f3f3f3;border-radius:50%;border-top:12px solid #4284f4;-webkit-animation:2s linear infinite spin;animation:2s linear infinite spin}.wp-ajax-loading .wp-ajax-loader,.wp-ajax-loading .wp-ajax-loader-panel{display:flex}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+			body{
+				position: relative !important;
+			}
+			#document-script, #document-title{
+				display: none !important;
+			}
+			.wp-ajax-loading{
+				position: relative;
+			}
+			.wp-ajax-loader-panel{
+				display: none;
+				background: #FFFFFF;
+				position: fixed;
+				z-index: 9999999;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100vh;
+			}
+			.wp-ajax-loader {
+				display: none;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 9999;
+				width: 80px;
+				height: 80px;
+				margin: -76px 0 0 -76px;
+				border: 12px solid #f3f3f3;
+				border-radius: 50%;
+				border-top: 12px solid #4284f4;
+				-webkit-animation: spin 2s linear infinite;
+				animation: spin 2s linear infinite;
+			}
+			.wp-ajax-loading .wp-ajax-loader, .wp-ajax-loading .wp-ajax-loader-panel{
+				display: flex;
+			}
+			@-webkit-keyframes spin {
+				0% { -webkit-transform: rotate(0deg); }
+				100% { -webkit-transform: rotate(360deg); }
+			}
+
+			@keyframes spin {
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(360deg); }
+			}
 		</style>
 		<script> var reload_helper = {"rootUrl":"<?php echo site_url(); ?>","ids":"","container_id":"body","mcdc":"header","searchID":"searchform","transition":"","scrollTop":"0","loader":"swing","bp_status":""};</script> 
 		<div class="wp-ajax-loader-panel"><div class="wp-ajax-loader"></div></div>
