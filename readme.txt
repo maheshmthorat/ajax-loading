@@ -4,7 +4,7 @@ Donate Link: https://rzp.io/l/maheshmthorat
 Tags: ajax, page loading, asynchronous, content, javascript
 Requires at least: 4.5
 Requires PHP: 5.6
-Tested up to: 6.4.3
+Tested up to: 6.6
 Stable tag: 1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -13,7 +13,13 @@ This plugin improves your users page experience without reloading pages using AJ
 
 == Description ==
 
-Ajax Page Loading Plugin allows you to load content asynchronously without needing to reload the page. This technique, known as AJAX, updates your content seamlessly, providing a smoother user experience. With lightweight JavaScript implementation, this plugin offers enhanced performance without the need for heavy JS frameworks.
+Enhance your website’s performance and user experience with our **Ajax Page Loading Plugin**. Load content asynchronously without reloading the page, thanks to the power of AJAX. Enjoy seamless content updates and a smoother browsing experience with lightweight JavaScript implementation—no heavy JS frameworks required.
+
+== Key Features: ==
+
+🔹 **Seamless Content Updates:** Load new content without refreshing the entire page, ensuring a fluid and uninterrupted user experience.
+🔹 **Lightweight Implementation:** Boost your website’s performance with minimal JavaScript, avoiding the bloat of heavy frameworks.
+🔹 **Customizable JavaScript Callback:** Leverage the `wp_ajax_load_complete` callback function for tailored JS hooks and custom behaviors.
 
 == JavaScript Callback Function ==
 
@@ -23,11 +29,6 @@ Use below callback function in your javascript library or you can just directly 
 ``  // YOUR JS HOOKS
 ``}
 
-
-== Features ==
-- Loads content without reloading pages.
-- Lightweight JS used.
-- Tested with various plugins and heavy usage sites.
 
 == Installation ==
 
